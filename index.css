@@ -57,6 +57,8 @@ body {
     position: absolute;
     top: 100vh;
     height: 100vh;
+    background-color: rgb(255, 239, 215);
+    width: 100%;
 }
 .sower {
     position: relative;
@@ -87,7 +89,6 @@ body {
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     width: 60%;
-    
 }
 
 .letter {
@@ -108,10 +109,32 @@ body {
     font-family: 'Segoe Script', cursive;
 }
 
-#poem{
-    position: absolute;
-    top: 100vh;
-    right: 1rem;
-    width: 25%;
+.poem {
+   position: absolute;
+   width: 20vw;
+   left: 3.75vw;
+   top: 5%;
+   border-style: groove;
 }
 
+#poem_title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding: 1rem;
+}
+
+#poem_signature {
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 1rem;
+    text-align: end;
+    padding: 1rem;
+}
+
+#poem {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
