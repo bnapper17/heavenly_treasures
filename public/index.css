@@ -19,8 +19,10 @@ body {
     left: 50%;
     transform: translate(-50%);
     top: 20%;
-    font-size: 3rem;
+    font-size: 4rem;
+    font-family:'Great Vibes', cursive;
     color: white;
+    font-weight: normal;
 }
 
 #vision{
@@ -28,7 +30,22 @@ body {
     left: 50%;
     top: 55%;
     font-size: 2rem;
+    font-family:'Great Vibes', cursive;
     color: white;
+}
+
+.links {
+    display: flex;
+    list-style-type: none;
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    color: white;
+}
+
+.links li {
+    margin-left: 1rem;
+    text-decoration: underline;
 }
 
 .sower {
