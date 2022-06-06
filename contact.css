@@ -76,6 +76,14 @@ textarea {
      opacity: 1;
  }
 
+ a {
+     color: white;
+     position: absolute;
+     top: 1rem;
+     right: 4rem;
+     font-size: 1.2rem;
+ }
+
 
 
 
