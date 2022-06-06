@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url('./Resources/contact_page.jpg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+}
+
+.form_container {
+    position: absolute;
+    left: 25%;
+    top: 17%;
+}
+
+header {
+    line-height: 1.75rem;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.form {
+    margin: 1rem;
+    display: flex;
+}
+
+input{
+    opacity: .7;
+    position: absolute;
+    left: 22%;
+}
+
+textarea {
+     opacity: .7;
+     position: absolute;
+     left: 22%;
+ }
+
+ .message {
+     margin-bottom: 13.5rem;
+ }
+
+ .submit {
+     position: absolute;
+     bottom: 10%;
+     left: 19.5%;
+ }
+
+ #button {
+     height: 3rem;
+     width: 10rem;
+     border-radius: 5%;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 1.3rem;
+     background-color: rgb(67, 67, 67);
+     color: white;
+     opacity: 1;
+ }
+
+
+
+

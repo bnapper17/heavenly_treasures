@@ -1,45 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Heavenly Treasures</title>
+    <link rel="stylesheet" href="./contact.css">
 </head>
 <body>
-    <header>
-        <h1>Contact Us</h1>
-        <p>If you have a need, we would love to pray with you.<br/>
-        If you have a praise report, we would love to celebrate with you.<br/>
-        And if you would just like to say hello, we would love to hear from you.</p>
-    </header>
-    <form action="https://formsubmit.co/0c80a6d5690a02f712897a723feda4cd" method="POST">
-        <div class="firstName">    
-            <label for="first_name">First Name</label>
-            <input type="text" name="name" id="first_name" required>
-        </div>
-        
-        <!-- honey pot -->
-        <input type="text" name="_honey" style="display: none;" >
+    <div class="container"> 
+        <div class="form_container">  
+            <header>
+                <h1>Contact Us</h1>
+                <p>If you have a need, we would love to pray with you.<br/>
+                If you have a praise report, we would love to celebrate with you.<br/>
+                And if you would just like to say hello, we would love to hear from you.</p>
+            </header>
+            <form action="https://formsubmit.co/0c80a6d5690a02f712897a723feda4cd" method="POST">
+                <div class="firstName form">    
+                    <label for="first_name">First Name:</label>
+                    <input type="text" name="name" id="first_name" required>
+                </div>
+                
+                <!-- honey pot -->
+                <input type="text" name="_honey" style="display: none;" >
 
-        <!-- Disable Captcha  -->
-        <input type="hidden" name="_captcha" value="false">
-        
-        <div class="lastName">
-            <label for="last_name">Last Name</label>
-            <input type="text" name="Last Name" id="last_name">
+                <!-- Disable Captcha  -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="lastName form">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" name="Last Name" id="last_name">
+                </div>
+                <div class="email form">
+                    <label for="email_address">E-mail:</label>
+                    <input type="text" name="email" id="email_address" required>
+                </div>
+                <div class="message form">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" rows="10" cols="30" required></textarea>
+                </div>
+                <div class="submit form">
+                    <input type="submit" value="Send" id="button">
+                </div>    
+            </form>
         </div>
-        <div class="email">
-            <label for="email_address">E-mail</label>
-            <input type="text" name="email" id="email_address" required>
-        </div>
-        <div class="message">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" rows="10" cols="30" required></textarea>
-        </div>
-        <div class="submit">
-            <input type="submit" value="Send">
-        </div>    
-    </form>
+    </div>
 </body>
 </html>
