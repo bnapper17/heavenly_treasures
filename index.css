@@ -111,7 +111,6 @@ body {
 
 #signature {
     margin-left: 50%;
-    /* transform: translate(-50%); */
     font-family: 'Segoe Script', cursive;
 }
 
@@ -121,8 +120,7 @@ body {
    left: 3.75vw;
    top: 5%;
    border-style: groove;
-   /* background-color: rgb(255, 239, 215); */
-   background-color: blanchedalmond;
+   background-color: silver;
    color: black;
 }
 
