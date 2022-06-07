@@ -28,6 +28,8 @@
                 <!-- Disable Captcha  -->
                 <input type="hidden" name="_captcha" value="false">
 
+                <!-- success redirect  -->
+                <input type="hidden" name="_next" value="https://htsl.netlify.app/success.html">
                 <div class="lastName form">
                     <label for="last_name">Last Name:</label>
                     <input type="text" name="Last Name" id="last_name">
@@ -46,7 +48,9 @@
             </form>
         </div>
         <nav>
-            <a href="./index.html">Back Home</a>
+            <ul class="links">
+                <li><a href="./index.html">Back Home</a></li>
+            </ul>
         </nav>
     </div>
 </body>
