@@ -12,6 +12,7 @@ body {
     min-height: 100vh;
     background-repeat:no-repeat;
     background-size: cover;
+    background-position: center;
 }   
 
 #name{
@@ -59,7 +60,7 @@ body {
     position: absolute;
     top: 100vh;
     height: 100vh;
-    background-color: rgb(67, 67, 67);
+    background-color: rgb(50, 50, 50);
     width: 100%;
     color: white;
 }
@@ -80,10 +81,13 @@ body {
     width: 43vw;
     padding: 2vw;
     opacity: 1;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden; 
 }
 
+.newsLetter:hover {
+    overflow-x: hidden;
+    overflow-y: auto;   
+}
 #greeting {
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -100,6 +104,7 @@ body {
     font-size: 1.5rem;
     font-family: 'Delius Swash Caps', cursive;
     font-weight: 500;
+    max-width: 40vw;
 }
 
 #phrase {
@@ -120,10 +125,17 @@ body {
    position: absolute;
    width: 20vw;
    left: 3.75vw;
-   top: 5%;
+   top: 3%;
    border-style: groove;
    background-color: silver;
    color: black;
+   max-height: 90vh;
+   overflow: hidden;
+}
+
+.poem:hover {
+    overflow-x: hidden;
+    overflow-y: auto;   
 }
 
 #poem_title {
@@ -131,6 +143,7 @@ body {
     font-size: 2.5rem;
     font-weight: normal;
     padding: 1rem 1rem 0 1rem;
+    max-width: inherit;
 }
 
 #poem_signature {
@@ -140,19 +153,28 @@ body {
     margin-bottom: 1rem;
     text-align: end;
     padding: 0 1rem 1rem 1rem;
+    max-width: inherit;
 }
 
 #poem {
     font-family: 'Petit Formal Script', cursive;
     font-size: 1.2rem;
     padding: 1rem;
+    max-width: inherit;
 }
 
 .schedule {
     position: absolute;
-    top: 5%;
+    top: 3%;
     right: 3.75vw;
     width: 20vw;
+    max-height: 90vh;
+    overflow: hidden;
+}
+
+.schedule:hover {
+    overflow-x: hidden;
+    overflow-y: auto;   
 }
 
 .schedule h2 {
