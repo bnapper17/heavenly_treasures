@@ -25,6 +25,12 @@ h1 {
     text-align: center;
 }
 
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 2rem;;
+    }
+}
+
 .links {
     display: flex;
     list-style-type: none;
