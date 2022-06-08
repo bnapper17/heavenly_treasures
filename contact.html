@@ -17,31 +17,31 @@
                 And if you would just like to say hello, we would love to hear from you.</p>
             </header>
             <form action="https://formsubmit.co/0c80a6d5690a02f712897a723feda4cd" method="POST">
-                <div class="firstName form">    
-                    <label for="first_name">First Name:</label>
-                    <input type="text" name="name" id="first_name" required>
-                </div>
-                
-                <!-- honey pot -->
-                <input type="text" name="_honey" style="display: none;" >
-
-                <!-- Disable Captcha  -->
-                <input type="hidden" name="_captcha" value="false">
-
-                <!-- success redirect  -->
-                <input type="hidden" name="_next" value="https://htsl.netlify.app/success.html">
-                <div class="lastName form">
-                    <label for="last_name">Last Name:</label>
-                    <input type="text" name="Last Name" id="last_name">
-                </div>
-                <div class="email form">
-                    <label for="email_address">E-mail:</label>
-                    <input type="text" name="email" id="email_address" required>
-                </div>
-                <div class="message form">
-                    <label for="message">Message:</label>
-                    <textarea name="message" id="message" rows="10" cols="30" required></textarea>
-                </div>
+                <section id="form_input">
+                    <div class="firstName form">
+                        <label for="first_name">First Name:</label>
+                        <input type="text" name="name" id="first_name" required>
+                    </div>
+                    
+                    <!-- honey pot -->
+                    <input type="text" name="_honey" style="display: none;" >
+                    <!-- Disable Captcha  -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- success redirect  -->
+                    <input type="hidden" name="_next" value="https://htsl.netlify.app/success.html">
+                    <div class="lastName form">
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" name="Last Name" id="last_name">
+                    </div>
+                    <div class="email form">
+                        <label for="email_address">E-mail:</label>
+                        <input type="text" name="email" id="email_address" required>
+                    </div>
+                    <div class="message form">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" rows="10" cols="30" required></textarea>
+                    </div>
+                </section>
                 <div class="submit form">
                     <input type="submit" value="Send" id="button">
                 </div>    
