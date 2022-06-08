@@ -192,8 +192,6 @@
     }
 }
 
-
-
 #return_link{
     position: absolute;
     bottom: -98%;
@@ -207,4 +205,10 @@
     #return_link {
         display: none;
     }
+}
+
+#facebook_link {
+    position:absolute;
+    bottom: 1rem;
+    right: 3rem;
 }
