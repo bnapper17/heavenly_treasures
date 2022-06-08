@@ -60,6 +60,12 @@
     color: white;
 }
 
+@media only screen and (max-width: 767px) {
+    .letter_container{
+        flex-direction:column;
+    }
+}
+
 #poem{
     width: 20%;
     color: black;
@@ -71,6 +77,13 @@
     overflow: hidden;
 }
 
+@media only screen and (max-width: 767px) {
+    #poem {
+        width: 100%;
+        height: fit-content;
+        margin-top: 0;
+    }
+}
 #poem:hover {
     overflow-y: auto;
     overflow-x: hidden;
@@ -103,6 +116,14 @@
     background-image: url(./Resources/sower_transparent.png);
     background-position: center;
     overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+    #newsLetter {
+        width: 100%;
+        height: fit-content;
+        background: rgb(50, 50, 50);
+    }
 }
 
 #newsLetter:hover {
@@ -144,9 +165,18 @@
     overflow: hidden;
 }
 
+@media only screen and (max-width: 767px) {
+    #schedule {
+        width: 100%;
+        height: fit-content;
+        background-color:rgb(168, 185, 193);
+        color: black;
+    }
+}
+
 #schedule:hover {
     overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x: hidden
 }
 
 #schedule_head {
