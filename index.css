@@ -3,9 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-body {   
-    background-color: hsla(0, 0%, 90%, 0.622);
-}
 
 .landing {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./Resources/tent_revival.png');
@@ -55,152 +52,117 @@ body {
     color: white;
 }
 
+
 .letter_container {
     display: flex;
-    position: absolute;
-    top: 100vh;
-    height: 100vh;
+    justify-content: space-around;
     background-color: rgb(50, 50, 50);
-    width: 100%;
     color: white;
 }
-.sower {
-    position: relative;
-    left: 27.5vw;
-    height: 100vh;
-    width: 45vw;
-    background-image: url('./Resources/Sower_resized.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: .2;
+
+#poem{
+    width: 20%;
+    color: black;
+    border-style: groove;
+    border-width: .15rem;
+    background-color: rgb(168, 185, 193);
+    max-height: 80vh;
+    margin-top: 5vh;
+    overflow: hidden;
 }
 
-.newsLetter {
-    position: relative;
-    right: 15vw;
-    width: 43vw;
-    padding: 2vw;
-    opacity: 1;
-    overflow: hidden; 
-}
-
-.newsLetter:hover {
+#poem:hover {
+    overflow-y: auto;
     overflow-x: hidden;
-    overflow-y: auto;   
-}
-#greeting {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    margin-left: 50%;
-    transform: translate(-50%);
-    font-size: 2.75rem;
-    font-family: 'Great Vibes', cursive;
-    width: 60%;
-    font-weight: normal;
-    text-align: center;
-}
-
-.letter {
-    font-size: 1.5rem;
-    font-family: 'Delius Swash Caps', cursive;
-    font-weight: 500;
-    max-width: 40vw;
-}
-
-#phrase {
-    margin-left: 50%;
-    transform: translate(-50%);
-    font-family: 'Great Vibes', cursive;
-    font-weight: normal;
-    font-size: 2rem;
-    text-align: center;
-}
-
-#signature {
-    margin-left: 50%;
-    font-family: 'Segoe Script', cursive;
-}
-
-.poem {
-   position: absolute;
-   width: 20vw;
-   left: 3.75vw;
-   top: 3%;
-   border-style: groove;
-   background-color: silver;
-   color: black;
-   max-height: 90vh;
-   overflow: hidden;
-}
-
-.poem:hover {
-    overflow-x: hidden;
-    overflow-y: auto;   
 }
 
 #poem_title {
     font-family: 'Great Vibes', cursive;
     font-size: 2.5rem;
-    font-weight: normal;
     padding: 1rem 1rem 0 1rem;
-    max-width: inherit;
+    font-weight: normal;
 }
 
 #poem_signature {
-    font-size: 1rem;
-    font-weight: normal;
-    font-style: italic;
-    margin-bottom: 1rem;
     text-align: end;
-    padding: 0 1rem 1rem 1rem;
-    max-width: inherit;
+    font-size: 1rem;
+    padding-right: 1rem;
+    font-style: italic;
 }
 
-#poem {
+#poem_body {
     font-family: 'Petit Formal Script', cursive;
     font-size: 1.2rem;
-    padding: 1rem;
-    max-width: inherit;
+    padding: 1em;
+    line-height: 1.2;
 }
 
-.schedule {
-    position: absolute;
-    top: 3%;
-    right: 3.75vw;
-    width: 20vw;
-    max-height: 90vh;
+#newsLetter {
+    width: 45%;
+    height: 100vh;
+    background-image: url(./Resources/sower_transparent.png);
+    background-position: center;
     overflow: hidden;
 }
 
-.schedule:hover {
+#newsLetter:hover {
+    overflow-y: auto;
     overflow-x: hidden;
-    overflow-y: auto;   
 }
 
-.schedule h2 {
+#letter_title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.75rem;
     text-align: center;
-    margin-bottom: 2rem;
+    margin: 1em;
+    font-weight: normal;
+}
+
+.letter {
+    font-family: 'Delius Swash Caps', cursive;
+    font-size: 1.5rem;
+    padding-inline: 1em;
+}
+
+#phrase {
+    font-family: 'Great Vibes', cursive;
     font-size: 2rem;
+    text-align: center;
+    padding-block: 1em;
+}
+
+#signature {
+    font-family: 'Segoe Script', cursive;
+    text-align: end;
+    padding-bottom: 2em;
+}
+
+#schedule{
+    width: 20%;
+    max-height: 80vh;
+    margin-top: 5vh;
+    overflow: hidden;
+}
+
+#schedule:hover {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#schedule_head {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    padding-block: 1em;
+    font-weight: normal;
 }
 
 .appointments {
-    margin-left: 50%;
-    transform: translate(-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    font-size: 1.2rem;
 }
 
-.appointments li {
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 1rem;
-}
 
-#return_link {
-    position: absolute;
-    bottom: 1rem;
-    right: 3rem;
-    color: white;
-    font-size: 1.1rem;
-    font-family: Arial, Helvetica, sans-serif;
+#return_link{
+    display: block;
 }
