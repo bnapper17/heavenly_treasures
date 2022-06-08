@@ -4,37 +4,64 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(50, 50, 50);
+}
+
 .about {
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    background-image: url(./Resources/sower_transparent.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: rgb(50, 50, 50);
     height: max-content;
     color: white;
     align-items: center;
+    width: 45vw;
+    height: fit-content;
 }
 
-.sower{
-    height: 100vh;
-    height: 45vw;
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%);
-    opacity: .2;
+@media only screen and (max-width: 767px) {
+    .about {
+        width: 100%;
+        background: rgb(50, 50, 50);
+    }
 }
 
 .about h1 {
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
+    padding: 1em;
     font-family: 'Great Vibes', cursive;
     font-weight: normal;
     font-size: 2.5rem;;
 }
+
+@media only screen and (max-width: 767px) {
+
+    .about h1 {
+        margin-top: 1.5em;
+        text-align: center;
+    }
+
+}
+
 .about p {
-    max-width: 43vw;
+    width: 43vw;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
-    margin-bottom: 1rem;
+    padding: 1em;
 }
+
+@media only screen and (max-width: 767px) {
+
+    .about p {
+        width: 100%;
+    }
+
+}
+
 
 .links {
     display: flex;
